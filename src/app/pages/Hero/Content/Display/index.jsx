@@ -3,13 +3,13 @@ import React from 'react'
 function Display() {
   return (
     <div
-    className="relative w-[1200px] h-[540px] bg-cover bg-center"
+    className="relative w-[1200px] h-[540px] bg-cover bg-center rounded-[36px]"
     style={{
-      backgroundImage: "url('https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D')", // Replace with your image URL
+      backgroundImage: "url('https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D')", 
     }}
   >
-    {/* Overlay for better text visibility */}
-    <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+    
+    <div className="absolute inset-0  bg-opacity-50 "></div>
 
     {/* Centered Text */}
     <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
