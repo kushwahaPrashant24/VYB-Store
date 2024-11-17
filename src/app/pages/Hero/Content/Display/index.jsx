@@ -1,13 +1,20 @@
 import React from 'react'
+import Image from 'next/image';
+import mountainImage from '../../../../../Assets/mountains.jpeg';
 
 function Display() {
+    console.log(mountainImage);
   return (
-    <div
-    className="relative w-[1200px] h-[540px] bg-cover bg-center rounded-[36px]"
-    style={{
-      backgroundImage: "url('https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D')", 
-    }}
-  >
+    <div className="relative w-[1200px] h-[540px]">
+      {/* Use Image component for automatic optimization */}
+      <Image
+      className='rounded-t-[30px]'
+        src={mountainImage} // Path to the image
+        alt="Mountain Background"
+        layout="fill" // This will make the image cover the entire div
+        objectFit="cover" // Makes sure the image covers the container without distortion
+        quality={100} // Optional: Adjust quality if needed
+      />
     
     <div className="absolute inset-0  bg-opacity-50 "></div>
 
