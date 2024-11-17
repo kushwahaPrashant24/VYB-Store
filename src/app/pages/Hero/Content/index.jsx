@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Display from './Display';
 import Itineraries from './Itineraries';
+import Path from './Path';
 
 function Content() {
   return (
@@ -12,6 +13,7 @@ function Content() {
       <div className='h-[1897px] w-[1200px] bg-black rounded-[36px] flex flex-col gap-[35px] '>
       <Display />
       <Itineraries />
+      <Path />
       </div>
     </div>
   )
