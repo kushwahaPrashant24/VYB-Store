@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import mountainImage from '../../../../../Assets/mountains.jpeg';
+import mountainImage from '@/../public/Assets/mountains.jpeg';
 
 function Display() {
     console.log(mountainImage);
