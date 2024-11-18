@@ -4,6 +4,9 @@ import Display from './Display';
 import Itineraries from './Itineraries';
 import Path from './Path';
 import Creator from './Creator';
+import Influence from './Influencers';
+import Init from './Init';
+import FAQ from "./Questions"
 
 function Content() {
   return (
@@ -20,6 +23,9 @@ function Content() {
       <Path />
       </div>
       <Creator />
+      <Influence />
+      <Init />
+      <FAQ />
     </div>
   )
 }
