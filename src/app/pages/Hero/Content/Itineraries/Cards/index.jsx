@@ -72,7 +72,7 @@ const Card = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, [handleNext] , 3000); // Change card every 3 seconds
+    }, 3000); // Change card every 3 seconds
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);

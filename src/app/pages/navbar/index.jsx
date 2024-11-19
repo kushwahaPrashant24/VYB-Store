@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // Mobile menu
@@ -47,29 +46,18 @@ function Navbar() {
 
           {/* Links and Dropdown */}
           <div className="hidden md:flex space-x-6 items-center">
-            <Link href="/">
-              <a  className="hover:text-blue-400">
-                Fav Creator
-              </a>
-            </Link>
-
-            <Link href="/about">
-              <a  className="hover:text-blue-400">
-                Merchandise
-              </a>
-            </Link>
-
-            <Link href="/contact">
-              <a  className="hover:text-blue-400">
-                Brand
-              </a>
-            </Link>
-
-            <Link href="/digital">
-              <a  className="hover:text-blue-400">
-                Digital
-              </a>
-            </Link>
+            <a href="/" className="hover:text-blue-400">
+              Fav Creator
+            </a>
+            <a href="/about" className="hover:text-blue-400">
+              Merchandise
+            </a>
+            <a href="/contact" className="hover:text-blue-400">
+              Brand
+            </a>
+            <a href="/digital" className="hover:text-blue-400">
+              Digital
+            </a>
 
             {/* Dropdown Button */}
             <div className="relative">
@@ -193,64 +181,62 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden relative">
-          <div className="absolute right-3 top-0 h-[396px] w-[240px] bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg text-white p-4">
-            {/* Close Button */}
-            <button
-              className="absolute top-2 right-2 text-gray-400 hover:text-white focus:outline-none"
-              onClick={() => setMenuOpen(false)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+  <div className="md:hidden relative">
+    <div className="absolute right-3 top-0 h-[396px] w-[240px] bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg text-white p-4">
+      {/* Close Button */}
+      <button
+        className="absolute top-2 right-2 text-gray-400 hover:text-white focus:outline-none"
+        onClick={() => setMenuOpen(false)}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
 
-            {/* Profile Section */}
-            <div className="flex flex-col items-center mb-4">
-              <div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden shadow-lg">
-                <img
-                  src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="mt-3 text-center">
-                <p className="font-semibold text-lg">Prashant Kushwaha</p>
-                <p className="text-sm text-gray-400">
-                  prashantkush24@gmail.com
-                </p>
-              </div>
-            </div>
-
-            {/* Menu Options */}
-            <div className="space-y-3">
-              <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
-                Profile
-              </button>
-              <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
-                Address
-              </button>
-              <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
-                Contact
-              </button>
-              <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
-                About Us
-              </button>
-            </div>
-          </div>
+      {/* Profile Section */}
+      <div className="flex flex-col items-center mb-4">
+        <div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden shadow-lg">
+          <img
+            src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Profile"
+            className="w-full h-full object-cover"
+          />
         </div>
-      )}
+        <div className="mt-3 text-center">
+          <p className="font-semibold text-lg">Prashant Kushwaha</p>
+          <p className="text-sm text-gray-400">prashantkush24@gmail.com</p>
+        </div>
+      </div>
+
+      {/* Menu Options */}
+      <div className="space-y-3">
+        <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
+          Profile
+        </button>
+        <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
+          Address
+        </button>
+        <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
+          Contact
+        </button>
+        <button className="w-full text-left px-4 py-2 bg-gray-700 rounded-md hover:bg-gray-600 transition">
+          About Us
+        </button>
+      </div>
+    </div>
+  </div>
+)}
     </nav>
   );
 }
