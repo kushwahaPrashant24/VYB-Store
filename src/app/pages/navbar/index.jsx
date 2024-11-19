@@ -194,7 +194,7 @@ function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden relative">
-          <div className="absolute right-3 top-0 h-[396px] w-[240px] bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg text-white p-4">
+          <div className="absolute right-3 top-0 h-[397px] w-[240px] bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg text-white p-4">
             {/* Close Button */}
             <button
               className="absolute top-2 right-2 text-gray-400 hover:text-white focus:outline-none"
