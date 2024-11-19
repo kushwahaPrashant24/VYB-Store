@@ -181,28 +181,29 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-  <div className="md:hidden relative">
-    <div className="absolute right-3 top-0 h-[396px] w-[240px] bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg text-white p-4">
-      {/* Close Button */}
-      <button
-        className="absolute top-2 right-2 text-gray-400 hover:text-white focus:outline-none"
-        onClick={() => setMenuOpen(false)}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
-      </button>
+        <div className="md:hidden relative">
+          <div className="absolute right-3 top-0 h-[397px] w-[240px] bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 bg-opacity-90 backdrop-blur-md rounded-lg shadow-lg text-white p-4">
+            {/* Close Button */}
+            <button
+              className="absolute top-2 right-2 text-gray-400 hover:text-white focus:outline-none"
+              onClick={() => setMenuOpen(false)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
 
       {/* Profile Section */}
       <div className="flex flex-col items-center mb-4">
