@@ -1,14 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import Image1 from "../../../../../public/Assets/img1.jpeg"
-import Image2 from "../../../../../public/Assets/img2.jpeg"
-import Image3 from "../../../../../public/Assets/img3.jpeg"
-import Image4 from "../../../../../public/Assets/img4.jpeg"
-import Image5 from "../../../../../public/Assets/img5.jpeg"
-import Image6 from "../../../../../public/Assets/img6.jpeg"
-
-
-
 
 function Starter() {
   return (
@@ -37,7 +27,7 @@ function Starter() {
           <div className="mt-6">
             <p className="text-lg sm:text-xl text-gray-300">
               "Unleash Your Influence: Sell Itineraries, Build Your Brand, Create
-              Merch, and Share Content  All in One Hub."
+              Merch, and Share Content – All in One Hub."
             </p>
           </div>
 
@@ -55,39 +45,39 @@ function Starter() {
         {/* Right Section (Image Grid) */}
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* First Image */}
-          <Image
-            src={Image1}
+          <img
+            src="https://images.pexels.com/photos/3680219/pexels-photo-3680219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="img1"
             className="rounded-lg h-[250px] w-full object-cover"
           />
           {/* Second Image */}
-          <Image
-            src={Image2}
+          <img
+            src="https://images.pexels.com/photos/2100064/pexels-photo-2100064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="img2"
             className="rounded-lg h-[250px] w-full object-cover"
           />
           {/* Third Image */}
-          <Image
-            src={Image3}
+          <img
+            src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="img3"
             className="rounded-lg h-[250px] w-full object-cover"
           />
 
           {/* Fourth Image */}
-          <Image
-            src={Image4}
+          <img
+            src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="img4"
             className="rounded-lg h-[250px] w-full object-cover"
           />
           {/* Fifth Image */}
-          <Image
-            src={Image5}
+          <img
+            src="https://images.pexels.com/photos/2898319/pexels-photo-2898319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="img5"
             className="rounded-lg h-[250px] w-full object-cover"
           />
           {/* Sixth Image */}
-          <Image
-            src={Image6}
+          <img
+            src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="img6"
             className="rounded-lg h-[250px] w-full object-cover"
           />
